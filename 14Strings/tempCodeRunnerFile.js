@@ -1,0 +1,1 @@
+console.log("hohohohoo".lastIndexOf("h"))
