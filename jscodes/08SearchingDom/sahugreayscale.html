@@ -1,0 +1,50 @@
+<!-- Q4	a)	Design a web page that allows the user to choose from a series of
+images and to view the image in color and grayscale. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Viewer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Viewer</h1>
+
+  <label for="imageSelector">Select an Image:</label>
+  <select id="imageSelector" onchange="changeImage()">
+    <option value="color">Color Image</option>
+    <option value="grayscale">Grayscale Image</option>
+  </select>
+
+  <div id="imageView">
+    <img id="selectedImage" src="alok.jpg" alt="Color Image">
+  </div>
+
+  <script>
+    function changeImage() {
+      var imageSelector = document.getElementById('imageSelector');
+      var selectedImage = document.getElementById('selectedImage');
+
+      if (imageSelector.value === 'color') {
+        selectedImage.style.fiter = 'grayscale(100%)';
+      } else if (imageSelector.value === 'grayscale') 
+        selectedImage.style.fiter = 'grayscale(100%)';
+    }
+  </script>
+
+</body>
+</html>	

@@ -1,0 +1,5 @@
+alert("hi alok here")
+let v = prompt("enter a value","default")
+let write = confirm("Do you want to write it to page")
+if(write)
+document.write(v)
