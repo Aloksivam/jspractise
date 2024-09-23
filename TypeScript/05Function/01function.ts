@@ -26,8 +26,12 @@ console.log(name);
 // Rest parameters can be typed like normal parameters, but the type must be an array as rest parameters are always arrays.
 
 // Example
-function addition(a: number, b: number, ...rest: number[]) {
-  return a + b + rest.reduce((p, c) => p + c, 0);
-}
+// function addition(a: number, b: number, ...rest: number[]) {
+//   return a + b + rest.reduce((p, c) => p + c, 0);
+// }
 
-console.log(addition(1,2,3,4,7,8))
+// console.log(addition(1,2,3,4,7,8))
+
+//typecasting in typescript
+let x:string = '45';
+console.log(Math.floor((x as unknown )as number));

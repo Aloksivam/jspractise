@@ -1,4 +1,4 @@
-// export{}
+
 // console.log("alok")
 // 2.	Given an array array{}, write a function to filter all the age>=25
 
