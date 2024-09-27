@@ -9,4 +9,9 @@ class NamedValue<T>{
     public getValue():T|undefined{
         return this._value
     }
+    public toString():string{
+        return `${this.name}`
+    }
 }
+let alok = new NamedValue("alok");
+console.log(alok.toString());
