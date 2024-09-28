@@ -1,5 +1,5 @@
 enum CardinalDirections {
-    North='a',
+    North,
     East,
     South,
     West
