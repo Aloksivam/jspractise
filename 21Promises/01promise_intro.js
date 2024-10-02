@@ -88,7 +88,7 @@ consumePromiseFive()
 
 // // getAllUsers()
 
-// // fetch('https://jsonplaceholder.typicode.com/users').then((response)=>{return response.json()}).then((data)=>{console.log(data)})
-// // .catch((error)=>console.log(response))
-// fetch('https://api.github.com/users/Aloksivam').then((response)=>{return response.json()}).then((data)=>{console.log(data)})
-// .catch((error)=>console.log(response))
+fetch('https://jsonplaceholder.typicode.com/users').then((response)=>{return response.json()}).then((data)=>{console.log(data)})
+.catch((error)=>console.log(response))
+fetch('https://api.github.com/users/Aloksivam').then((response)=>{return response.json()}).then((data)=>{console.log(data)})
+.catch((error)=>console.log(response))
