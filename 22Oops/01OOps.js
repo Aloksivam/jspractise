@@ -5,6 +5,19 @@ const user = {
     name:"alok",
     age:21,
     getintro:function intro(){
-        console.log("hi, i am a method present inside an object")
+        console.log(this.name)
     }
 }
+user.getintro();
+// //constructor function
+// let date = new Date();
+// const promiseone  = new Promise();
+// function user(username, logincount,isLoggedin){
+//     this.username = username;
+//     this.logincount = logincount;
+//     this.isLoggedin = isLoggedin;
+//     return this
+// }
+// let userone = new user("alok",12,true);
+// let usertwo = new user("shivam",15,false);
+// console.log(userone.isLoggedin)
