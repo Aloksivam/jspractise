@@ -7,4 +7,3 @@ type Useer={
     name:string
     isActive:boolean
 }
-const allUsers
