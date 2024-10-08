@@ -102,6 +102,6 @@ async function printCar() {
     }
   }
   
-  await printCar();
-  console.log("Thank you");
-// console.log(hashMap)s
+  // await printCar();
+console.log("Thank you");
+// console.log(hashMap)
