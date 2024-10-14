@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phnomenal Travel Recommendations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: #443d6b;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav ul {
+        list-style-type: none;
+        /* padding: 0; */
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #d1c6c6;
+        font-weight: bold;
+      }
+      .searchar {
+        display: flex;
+        flex-direction: row;
+        background-color: #3b4c85;
+        padding: 1%; /* Space inside the container */
+        gap: 3%; /* Space between items */
+        border-radius: 15px;
+        /* justify-content: space-around; */
+      }
+      /* Styling the search container */
+      .search-container {
+        display: flex;
+        justify-content: center; /* Center the search input */
+        width: 100%; /* Full width of the parent container */
+        max-width: 400px; /* Restrict max width */
+        padding: 10px; /* Padding around the input */
+        margin: 20px auto; /* Center the container with margin */
+      }
+
+      /* Styling the search input */
+      #searchInput {
+        width: 100%; /* Full width inside the container */
+        padding: 10px 15px; /* Padding inside the input */
+        font-size: 16px; /* Comfortable font size */
+        border: 1px solid #ccc; /* Light border around the input */
+        border-radius: 25px; /* Rounded corners */
+        outline: none; /* Remove default focus outline */
+        transition: all 0.3s ease; /* Smooth transitions for hover and focus */
+      }
+
+      #searchInput::placeholder {
+        color: #999; /* Light gray for the placeholder text */
+        font-size: 16px; /* Match font size with input text */
+      }
+
+      #searchInput:focus {
+        border-color: #3b4c85; /* Change border color on focus */
+        box-shadow: 0 0 5px rgba(59, 76, 133, 0.5); /* Add subtle glow on focus */
+      }
+
+      .btn {
+        padding: 3px;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./travel_recommendation.html">Home</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">About Us</a>
+        </li>
+        <li><a href="./contactus.html">Contact Us</a></li>
+      </ul>
+      <div class="searchar">
+        <div>
+          <input type="text" id="searchInput" placeholder="Search Here" />
+        </div>
+        <div><button id="btnSearch" class="btn">Search</button></div>
+        <div><button id="btnReset" class="btn">Reset</button></div>
+      </div>
+    </nav>
+    <main>
+      <div class="header">
+        <h1>Explore Dream Destination</h1>
+      </div>
+      <div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          velit mollitia unde culpa sapiente similique doloribus aliquid ea
+          fugiat quisquam deserunt numquam quibusdam natus, facere iure ex, quam
+          qui accusantium repudiandae debitis! Molestiae, error.
+        </p>
+      </div>
+      <button>Book Now</button>
+      
+    </main>
+  </body>
+</html>
