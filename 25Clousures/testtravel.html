@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phnomenal Travel Recommendations</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        background-image: url('./wallpaper.jpg');
+        background-size: cover;
+      }
+
+      nav {
+        background-color: #443d6b;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      nav ul {
+        list-style-type: none;
+        display: flex;
+      }
+
+      nav ul li {
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #d1c6c6;
+        font-weight: bold;
+      }
+
+      .searchar {
+        display: flex;
+        background-color: #3b4c85;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 15px;
+        align-items: center; /* Align buttons and input field vertically */
+      }
+
+      /* Styling the search container */
+      .search-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 400px;
+        padding: 10px;
+        margin: 20px auto;
+      }
+
+      /* Styling the search input */
+      #searchInput {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      #searchInput::placeholder {
+        color: #999;
+        font-size: 16px;
+      }
+
+      #searchInput:focus {
+        border-color: #3b4c85;
+        box-shadow: 0 0 5px rgba(59, 76, 133, 0.5);
+      }
+
+      .btn {
+        padding: 8px 16px;
+        border-radius: 6px;
+        background-color: #f4f4f4;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #ddd;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      main .header h1 {
+        font-size: 2.5rem;
+        color: #d3d5db;
+        margin-bottom: 20px;
+      }
+
+      main p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: rgb(36, 9, 9);
+        font-weight: bold;
+      }
+
+      button {
+        padding: 10px 20px;
+        background-color: #3b4c85;
+        color: rgb(51, 38, 38);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+      }
+
+      button:hover {
+        background-color: #2d3a6c;
+      }
+      .container {
+    display: flex;
+    align-items: flex-start; /* Aligns both items at the top */
+    gap: 20px; /* Space between social media links and the content */
+    padding: 20px;
+    
+}
+
+/* Social media links container */
+.social-media {
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    align-items: flex-start; /* Align to the left */
+    gap: 10px; /* Space between each link */
+    padding: 10px;
+}
+
+/* Social media links styling */
+.social-media a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #3b4c85;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Fixed width for each link */
+}
+
+.social-media a:hover {
+    background-color: #2d3a6c;
+}
+
+/* Main content section */
+.main-content {
+    flex-grow: 1; /* Allow the main content to take up the remaining space */
+    background-color: #f0f0f015;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <a href="./travel_recommendation.html">Home</a>
+        </li>
+        <li>
+          <a href="./aboutus.html">About Us</a>
+        </li>
+        <li><a href="./contactus.html">Contact Us</a></li>
+      </ul>
+
+      <div class="searchar">
+        <input type="text" id="searchInput" placeholder="Search Here" />
+        <button id="btnSearch" class="btn">Search</button>
+        <button id="btnReset" class="btn">Reset</button>
+      </div>
+    </nav>
+<div class="container">
+    <div class="social-media">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+    </div>
+    <div class="main-content">
+    <main>
+       
+      <div class="header">
+        <h1>Explore<br> Dream <br> Destination</h1>
+      </div>
+      <div>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore
+          velit mollitia unde culpa sapiente similique doloribus aliquid ea
+          fugiat quisquam deserunt numquam quibusdam natus, facere iure ex, quam
+          qui accusantium repudiandae debitis! Molestiae, error.
+        </p>
+      </div>
+      <button>Book Now</button>
+     
+    
+    </main></div>
+</div>
+  </body>
+</html>
