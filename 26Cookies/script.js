@@ -8,7 +8,11 @@ document.cookie = "name3=alok" // will add one more this cookie to list of  exis
 
 // let key = prompt("enter your key")
 // let value = prompt("enter your value")
-document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}` // can accept keys which have ";"  in between them
+// document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}` // can accept keys which have ";"  in between them
 
 //decodeURIComponent("full%3Bname") can be used to decode the string which contains special characters in them
 // console.log(cookie)alo
+localStorage.one = 5 // it will also work
+window.onstorage = (e)=>{alert(`local storage updated`); //note it will only work if you have updated something not in case of adding a new data
+    console.log(e);
+}

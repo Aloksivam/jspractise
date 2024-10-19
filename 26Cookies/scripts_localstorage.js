@@ -15,5 +15,5 @@ let user = { name: "JohnDoe", age: 30 };
 localStorage.setItem('user', JSON.stringify(user));
 
 // Retrieving and parsing the object
-let retrievedUser = JSON.parse(localStorage.getItem('user'));
+let retrievedUser = JSON.parse(localStorage.getItem('user')); //converting string to json
 console.log(retrievedUser.name); // Output: JohnDoe
